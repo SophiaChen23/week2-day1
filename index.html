@@ -8,19 +8,55 @@
                 background: url(images/central_park.jpg) 0 -200px no-repeat;<!--水平 垂直 -->
                 background-size: 1500px;
                 height: 400px;
+                padding-top: 100px;
+                padding-left: 100px;
+                font-weight:bold;
+                font-family: Arial, Helvetica,sans-serif;
             }
+            li {
+                list-style-type: none;
+                display: inline;
+                padiing: 0 20px;
+            <!-- box in content add margin, pattern, left right or some trash top, left and right -->
+
+            }
+            li a{
+                text-decoration: none;
+            }
+            li a:link{
+                color: #000;
+            }
+            li a:visited{
+                color: #000;
+            }
+            li a:hover{
+                color: #000;
+                text-decoration: underline;
+            }
+            li a:active{
+                color: #000;
+            }
+            nav{
+                background-color: rgb(255,245,238);
+                height:50px;
+                text-align: center;
+                padding-top: 2px;
+                margin-top:50px;/* inside the box*/
+                border:2px solid black;
+            }
+
         </style>
     </head>
     <body>
         <div id = "container">
-            <header>My trash website </header> <!-- what is this for heading -->
+            <header style = "font-size: 60px; color: #fff">My trash website </header> <!-- what is this for heading -->
             <nav>
                 <!-- end of naviation -->
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Gallery</li>
-                    <li>Contract</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page2.html">About</a></li>
+                    <li> Gallery</li>
+                    <li><a href="page3.html">Contract</a></li>
                 </ul>
             </nav>
 
