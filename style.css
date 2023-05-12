@@ -1,0 +1,58 @@
+
+header{
+    background: url(images/central_park.jpg) 0 -200px no-repeat;
+    background-size: 1500px;
+    height: 400px;
+    /*background-position: 0 -200px;*/
+    padding-top: 100px;
+    padding-left: 100px;
+    font-weight:bold;
+    font-family: Arial, Helvetica,sans-serif;
+}
+li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 20px;
+<!-- box in content add margin, pattern, left right or some trash top, left and right -->
+
+}
+li a{
+    text-decoration: none;
+}
+li a:link{
+    color: #000;
+}
+li a:visited{
+    color: #000;
+}
+li a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+li a:active{
+    color: #000;
+}
+nav{
+    background-color: rgb(255,245,238);
+    height:50px;
+    text-align: center;
+    padding-top: 2px;
+    /*margin-top:50px;!* inside the box*!*/
+    /*border:2px solid black;*/
+}
+main{
+    height:400px;
+}
+main h1{
+    color:rgb(129, 141, 179);
+    font-family: Arial;
+}
+footer {
+    height: 40px;
+    background-color: rgb(129,141,179);
+    text-align:center;
+    padding-top:20px;
+    color :rgb(211,218,240);
+}
+
+
