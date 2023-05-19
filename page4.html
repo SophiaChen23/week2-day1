@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Four Web Page</title>
+  <link rel = "stylesheet" href = "style.css">
+
+</head>
+<body>
+<div id = "container">
+  <header style = "font-size: 60px; color: #fff">My trash website </header> <!-- what is this for heading -->
+  <nav>
+    <!-- end of naviation -->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="page2.html">About</a></li>
+      <li> <a href = "page4.html"> Gallery</a></li>
+      <li><a href="page3.html">Contract</a></li>
+    </ul>
+  </nav>
+
+  <!-- main content -->
+  <main>
+
+    <h1> My four Heading.</h1> <!-- what is this,, for navigation-->
+    <p> My four paragraph</p> <!-- this is the main content -->
+
+    <ul id = "album">
+<!--      <li id = "photo"><img src = "images/winterland1.jpg"></img></li>-->
+<!--      <li id = "photo"><img src = "images/winterland2.jpg"></img></li>-->
+<!--      <li id = "photo"><img src = "images/winterland3.jpg"></img></li>-->
+<!--      <li id = "photo"><img src = "images/winterland4.jpg"></img></li>-->
+<!--      <li id = "photo"><img src = "images/winterland5.jpg"></img></li>-->
+<!--      <li id = "photo"><img src = "images/winterland6.jpg"></img></li>-->
+
+    </ul>
+  </main>
+  <!-- end of the main class -->
+  <footer>&copy; copy right 2023</footer>
+</div>
+<script>
+  var photos = [];
+  var fileNames = [];
+  var imageList = [];
+  var image;
+  var openList = "<li id ='photo'>";
+  var closeList = "</li>";
+
+  for (var i = 0; i < 6; i++) {
+    fileNames.push("winterland" + (i + 1));
+    photos.push("<img src = 'images/" + fileNames[i] + ".jpg'>");
+    image = openList + photos[i] + closeList;
+    imageList.push(image);
+  }
+  // document.getElementById("album").innerHTML = imageList.join(" ");
+  document.getElementById("album").innerHTML = imageList;
+
+</script>
+</body>
+</html>
